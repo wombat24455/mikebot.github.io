@@ -32,9 +32,11 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent"
                 style="margin-left: 20px !important">
                 <ul class="navbar-nav mr-auto">
+                    <div id="node-id"></div>
                     <script>
                         if (location.pathname !== "/") {
-                            document.write("<li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>");
+                            var node = document.getElementById('node-id');
+                            node.innerHTML('<li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>');
                         }
                     </script>
                     <li class="nav-item">
