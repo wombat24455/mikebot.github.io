@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
     <link rel="icon" href="assets/mikebotlogo.png" type="image/x-icon">
-    <title>MikeBot</title>
+    <title>MikeBot Discord Bot</title>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg bg-transparent">
@@ -20,14 +20,13 @@
     <img src="assets/mikebotlogo.png" width="50" height="50">
     <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 20px !important">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#/">Home <span class="sr-only">(current)</span></a>
-            </li>
+            <script>
+                if (location.pathname !== "/") {
+                    document.write("<li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>");
+                }
+            </script>
             <li class="nav-item">
-                <a class="nav-link" href="https://github.com/wombat24455/MikebotDiscordBot/wiki/Upcoming-features">Features</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/features">Dashboard</a>
+                <a class="nav-link" href="https://github.com/wombat24455/MikebotDiscordBot/wiki/Upcoming-features">Upcoming Features</a>
             </li>
         </ul>
         <div class="nav-item dropdown">
@@ -44,7 +43,6 @@
         <div class="nav-item">
             <a class="nav-link" href="https://github.com/wombat24455/MikebotDiscordBot#mikebot">About</a>
         </div>
-        <button class="btn login-btn btn-outline-accent my-2 my-sm-0" style="font-size: 10px !important;font-family: poppins !important;">LOGIN</button>
     </div>
 </nav>
 <div class="heading">
